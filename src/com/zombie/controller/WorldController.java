@@ -25,11 +25,15 @@ public class WorldController {
         E
     }
 
+    private ArrayList<Creature> creatures;
+    /*
+    TODO: delete creature
+     */
     private Creature creature;
     private WorldView worldView;
     private ArrayList<Vector2> water;
     private ArrayList<Resource> resources;
-    private Man man;
+    private ArrayList<Man> men;
     private com.zombie.model.Map map;
 
     static Map<Keys, Boolean> keys = new HashMap<Keys, Boolean>();
@@ -44,9 +48,13 @@ public class WorldController {
     };
 
     public WorldController(WorldView worldView) {
-        this.creature = worldView.getWorld().getCreature();
+        this.creatures = worldView.getWorld().getCreatures();
+        /*
+        TODO: delete
+         */
+        this.creature = creatures.get(0);
         this.water = worldView.getWorld().getMap().getWater();//getBricks();
-        this.man = worldView.getWorld().getMan();
+        this.men = worldView.getWorld().getMen();
         this.map = worldView.getWorld().getMap();
         this.resources = worldView.getWorld().getResources();
         this.worldView = worldView;
@@ -99,7 +107,7 @@ public class WorldController {
 
     public void update(float delta) {
         processInput();
-        creature.move(delta);
+        creature.move(delta); /////////////////////////////
     }
 
     public void resetWay(){
@@ -150,12 +158,16 @@ public class WorldController {
             }
         }*/
 
-        if ((creature.getPosition().x >= man.getPosition().x - man.SIZE/2)
-                && (creature.getPosition().x <= man.getPosition().x + man.SIZE/2)
-                && (creature.getPosition().y >= man.getPosition().y - man.SIZE/2)
-                && (creature.getPosition().y <= man.getPosition().y + man.SIZE/2)
-                ) {
+        for (int i = 0; i < men.size(); i++)
+        {
+            Man man = men.get(i);
+            if ((creature.getPosition().x >= man.getPosition().x - man.SIZE/2)
+                    && (creature.getPosition().x <= man.getPosition().x + man.SIZE/2)
+                    && (creature.getPosition().y >= man.getPosition().y - man.SIZE/2)
+                    && (creature.getPosition().y <= man.getPosition().y + man.SIZE/2)
+                    ) {
                 man.setDead(true);
+            }
         }
     }
 

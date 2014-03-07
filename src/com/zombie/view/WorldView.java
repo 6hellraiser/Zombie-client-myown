@@ -3,8 +3,11 @@ package com.zombie.view;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.zombie.model.Creature;
 import com.zombie.model.Man;
 import com.zombie.model.MyWorld;
+
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,11 +62,19 @@ public class WorldView extends Stage {
             ResourceView rv = new ResourceView(model.getResources().get(i));
             addActor(rv);
         }
-        ManView m = new ManView(model.getMan());
-        addActor(m);
+        ArrayList<Man> men = model.getMen();
+        for (int i = 0; i < men.size(); i++)
+        {
+            ManView m = new ManView(men.get(i));
+            addActor(m);
+        }
 
-        CreatureView cr = new CreatureView(model.getCreature());
-        addActor(cr);
+        ArrayList<Creature> creatures = model.getCreatures();
+        for (int i = 0; i < creatures.size(); i++)
+        {
+            CreatureView cr = new CreatureView(creatures.get(i));
+            addActor(cr);
+        }
     }
 
     public void setSize (int w, int h) {

@@ -67,7 +67,7 @@ public class LoginMenuView extends Table {
                 log = login.getText();
                 pass = password.getText();
                 System.out.println(log + " " + pass);  //////////////////////////////////////////////////////////LOGIN
-                JSONObject res = Convert(log.toString(), pass.toString());
+                JSONObject res = Convert(log.toString(), pass.toString());//////////////////////////////////////
                 Client.run(res);
                 stage.gameScreen.setScreen(stage.gameScreen.gameScreen);
                 return super.touchDown(event, x, y, pointer, button);

@@ -17,9 +17,9 @@ public class MyWorld {
     private Array<Brick> bricks = new Array<Brick>();
 
     private ArrayList<Resource> resources = new ArrayList<Resource>();
-    private Creature creature;
+    private ArrayList<Creature> creatures = new ArrayList<Creature>();
 
-    private Man man;
+    private ArrayList<Man> men = new ArrayList<Man>();
 
     private Map map;
 
@@ -38,12 +38,12 @@ public class MyWorld {
 
 
 
-    public Creature getCreature() {
-        return creature;
+    public ArrayList<Creature> getCreatures() {
+        return creatures;
     }
 
-    public Man getMan() {
-        return man;
+    public ArrayList<Man> getMen() {
+        return men;
     }
 
     public Map getMap() {
@@ -57,18 +57,15 @@ public class MyWorld {
     }
 
     public void createWorld() {
-        creature = new Creature(new Vector2(10,2));
-        man = new Man(new Vector2(2,10), Team.Red);
+        Creature creature = new Creature(new Vector2(10,2));
+        Man man = new Man(new Vector2(2,10), Team.Red);
+        creatures.add(creature);
+        men.add(man);
+        man = new Man(new Vector2(14, 12), Team.Yellow);
+        men.add(man);
+
         resources.add(new Resource(new Vector2(2,7),ResourceType.Food));
-        map = new Map(16, 12);
-        /*bricks.add(new Brick(new Vector2(0, 0)));
-        bricks.add(new Brick(new Vector2(1, 2)));
-        bricks.add(new Brick(new Vector2(2, 0)));
-        bricks.add(new Brick(new Vector2(3, 2)));
-        bricks.add(new Brick(new Vector2(4, 6)));
-        bricks.add(new Brick(new Vector2(5, 0)));
-        bricks.add(new Brick(new Vector2(6, 1)));
-        bricks.add(new Brick(new Vector2(7, 1)));*/
+        map = new Map(36, 25);
 
     }
 }
