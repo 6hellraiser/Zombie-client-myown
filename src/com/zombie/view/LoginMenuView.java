@@ -83,7 +83,8 @@ public class LoginMenuView extends Table {
                 log = login.getText();
                 pass = password.getText();
                 System.out.println(log + " " + pass);  //////////////////////////////////////////////////////////REGISTRATION
-                stage.gameScreen.setScreen(stage.gameScreen.gameScreen);
+                //stage.gameScreen.setScreen(stage.gameScreen.gameScreen);
+                stage.getRegistrationView(log, pass);
                 return super.touchDown(event, x, y, pointer, button);
             }
         }) ;

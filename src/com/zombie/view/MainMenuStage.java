@@ -18,12 +18,14 @@ public class MainMenuStage extends Stage {
     private SpriteBatch batch;
     private MainMenuView mainMenuView;
     private LoginMenuView loginMenuView;
+    private RegMenuView regMenuView;
     public float CAMERA_WIDTH = 800f;
     public float CAMERA_HEIGHT = 800f;
     public OrthographicCamera cam;
     private int width, height;
 
     ZombieGame gameScreen;
+
 
     public MainMenuStage(ZombieGame g) {
         gameScreen = g;
@@ -41,11 +43,24 @@ public class MainMenuStage extends Stage {
         loginMenuView.setFillParent(true);
         loginMenuView.setVisible(false);
         addActor(loginMenuView);
+
+        regMenuView = new RegMenuView(this);
+        regMenuView.setFillParent(true);
+        regMenuView.setVisible(false);
+        addActor(regMenuView);
     }
 
     public void getLoginView() {
         mainMenuView.setVisible(false);
+        regMenuView.setVisible(false);
         loginMenuView.setVisible(true);
+    }
+
+    public void getRegistrationView(String l, String p) {
+        mainMenuView.setVisible(false);
+        loginMenuView.setVisible(false);
+        regMenuView.setVisible(true);
+        regMenuView.setLoginAndPassword(l, p);
     }
 
     public void setSize (int w, int h) {

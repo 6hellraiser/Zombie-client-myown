@@ -39,7 +39,7 @@ public class MainMenuView extends Table {
     public MainMenuView(MainMenuStage g) {
         stage = g;
 
-        btnLogin = new TextButton("Login", MainScreen.regularSkin);
+        btnLogin = new TextButton("Log in", MainScreen.regularSkin);
         btnLogin.setPosition(Gdx.graphics.getWidth() / 7, Gdx.graphics.getHeight() * 0.6f);
         btnLogin.addListener(new InputListener() {
             @Override
