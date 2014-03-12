@@ -19,6 +19,7 @@ public class MainMenuStage extends Stage {
     private MainMenuView mainMenuView;
     private LoginMenuView loginMenuView;
     private RegMenuView regMenuView;
+    private UserMenuView userMenuView;
     public float CAMERA_WIDTH = 800f;
     public float CAMERA_HEIGHT = 800f;
     public OrthographicCamera cam;
@@ -48,19 +49,33 @@ public class MainMenuStage extends Stage {
         regMenuView.setFillParent(true);
         regMenuView.setVisible(false);
         addActor(regMenuView);
+
+        userMenuView = new UserMenuView(this);
+        userMenuView.setFillParent(true);
+        userMenuView.setVisible(false);
+        addActor(userMenuView);
     }
 
     public void getLoginView() {
         mainMenuView.setVisible(false);
         regMenuView.setVisible(false);
+        userMenuView.setVisible(false);
         loginMenuView.setVisible(true);
     }
 
     public void getRegistrationView(String l, String p) {
         mainMenuView.setVisible(false);
         loginMenuView.setVisible(false);
+        userMenuView.setVisible(false);
         regMenuView.setVisible(true);
         regMenuView.setLoginAndPassword(l, p);
+    }
+
+    public void getUserView() {
+        mainMenuView.setVisible(false);
+        regMenuView.setVisible(false);
+        loginMenuView.setVisible(false);
+        userMenuView.setVisible(true);
     }
 
     public void setSize (int w, int h) {
