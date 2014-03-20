@@ -65,12 +65,10 @@ public class LoginMenuView extends Table {
         btnLogin.addListener(new InputListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-//                log = login.getText();
-//                pass = password.getText();
-//                System.out.println(log + " " + pass);  //////////////////////////////////////////////////////////LOGIN
+                stage.getUserView();
+                //TODO: lalala
+                //stage.gameScreen.setScreen(stage.gameScreen.gameScreen);
 
-//                JSONObject res = Convert(log.toString(), pass.toString());//////////////////////////////////////
-//                Client.run(res);
 
                 Client.authenticate(login.getText(), password.getText(), new GuiCallback<Boolean>() {
                             @Override
