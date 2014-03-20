@@ -1,16 +1,17 @@
 package com.zombie.view;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField;
-import com.zombie.Client;
+import com.zombie.interconnection.Client;
 import com.zombie.screens.MainScreen;
-import org.json.simple.JSONObject;
+import com.zombie.util.GuiCallback;
+
+import static javax.swing.JOptionPane.showMessageDialog;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,15 +36,15 @@ public class LoginMenuView extends Table {
         stage = g;
 
         title = new Label("Log In", MainScreen.regularSkin);
-        title.setPosition(Gdx.graphics.getWidth() / 2  - title.getWidth()/2, Gdx.graphics.getHeight() - title.getHeight()*2);
+        title.setPosition(Gdx.graphics.getWidth() / 2 - title.getWidth() / 2, Gdx.graphics.getHeight() - title.getHeight() * 2);
         addActor(title);
 
         logLabel = new Label("Login: ", MainScreen.regularSkin);
         logLabel.setPosition(Gdx.graphics.getWidth() / 7, Gdx.graphics.getHeight() * 0.6f);
         addActor(logLabel);
 
-        login = new TextField("name", MainScreen.regularSkin);
-        login.setPosition(4*Gdx.graphics.getWidth() / 7, Gdx.graphics.getHeight() * 0.6f);
+        login = new TextField("usr", MainScreen.regularSkin);
+        login.setPosition(4 * Gdx.graphics.getWidth() / 7, Gdx.graphics.getHeight() * 0.6f);
         login.setWidth(logLabel.getWidth() * 3);
 
         addActor(login);
@@ -52,8 +53,8 @@ public class LoginMenuView extends Table {
         passLabel.setPosition(Gdx.graphics.getWidth() / 7, Gdx.graphics.getHeight() * 0.4f);
         addActor(passLabel);
 
-        password = new TextField("password", MainScreen.regularSkin);
-        password.setPosition(4*Gdx.graphics.getWidth() / 7, Gdx.graphics.getHeight() * 0.4f);
+        password = new TextField("123", MainScreen.regularSkin);
+        password.setPosition(4 * Gdx.graphics.getWidth() / 7, Gdx.graphics.getHeight() * 0.4f);
         password.setPasswordCharacter('*');
         password.setPasswordMode(true);
         password.setWidth(logLabel.getWidth() * 3);
@@ -64,15 +65,33 @@ public class LoginMenuView extends Table {
         btnLogin.addListener(new InputListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-                log = login.getText();
-                pass = password.getText();
-                System.out.println(log + " " + pass);  //////////////////////////////////////////////////////////LOGIN
-                JSONObject res = Convert(log.toString(), pass.toString());//////////////////////////////////////
-                Client.run(res);
-                stage.gameScreen.setScreen(stage.gameScreen.gameScreen);
+//                log = login.getText();
+//                pass = password.getText();
+//                System.out.println(log + " " + pass);  //////////////////////////////////////////////////////////LOGIN
+
+//                JSONObject res = Convert(log.toString(), pass.toString());//////////////////////////////////////
+//                Client.run(res);
+
+                Client.authenticate(login.getText(), password.getText(), new GuiCallback<Boolean>() {
+                            @Override
+                            protected void call(Boolean success) {
+                                if (success)
+                                    stage.gameScreen.setScreen(stage.gameScreen.gameScreen);
+                                else
+                                    showMessageDialog(null, "Error, incorrect login or password, enter correct data");
+                                    //TODO: Показать пользователю ошибку аутентификации и попросить ввести данные заново.
+                                    ;
+                            }
+                        }
+                );
+                //TODO: Показать прогресс бар
+               /* try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }*/
                 return super.touchDown(event, x, y, pointer, button);
             }
-        }) ;
+        });
         addActor(btnLogin);
 
         btnReg = new TextButton("Registration", MainScreen.regularSkin);
@@ -84,22 +103,24 @@ public class LoginMenuView extends Table {
                 pass = password.getText();
                 System.out.println(log + " " + pass);  //////////////////////////////////////////////////////////REGISTRATION
                 //stage.gameScreen.setScreen(stage.gameScreen.gameScreen);
+                Client.registration(log, pass); //TODO: refactor it
                 stage.getRegistrationView(log, pass);
                 return super.touchDown(event, x, y, pointer, button);
             }
-        }) ;
+        });
         addActor(btnReg);
     }
 
-    private JSONObject Convert(String one, String two) {
-        JSONObject resultJson = new JSONObject();
-        JSONObject obj = new JSONObject();
-        resultJson.put("id",1);
-        obj.put("username", one);
-        obj.put("password", two);
-        resultJson.put("parameters", obj);
-        return resultJson;
-    }
+
+//    private JSONObject Convert(String one, String two) {
+//        JSONObject resultJson = new JSONObject();
+//        JSONObject obj = new JSONObject();
+//        resultJson.put("id", 1);
+//        obj.put("username", one);
+//        obj.put("password", two);
+//        resultJson.put("parameters", obj);
+//        return resultJson;
+//    }
 
 
 }

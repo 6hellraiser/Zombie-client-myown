@@ -6,10 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
-import com.badlogic.gdx.scenes.scene2d.ui.TextField;
-import com.zombie.Client;
 import com.zombie.screens.MainScreen;
-import org.json.simple.JSONObject;
 
 /**
  * Created with IntelliJ IDEA.
