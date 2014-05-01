@@ -1,8 +1,11 @@
 package com.zombie.controller;
 
 import com.badlogic.gdx.math.Vector2;
-import com.zombie.model.*;
-import com.zombie.view.WorldView;
+import com.zombie.model.Creature;
+import com.zombie.model.MyWorld;
+import com.zombie.plugin.Resource;
+import com.zombie.plugin.AbstractCharacter;
+import com.zombie.view.CameraUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,14 +29,11 @@ public class WorldController {
     }
 
     private ArrayList<Creature> creatures;
-    /*
-    TODO: delete creature
-     */
-    private Creature creature;
-    private WorldView worldView;
+    //private MyWorld world;
     private ArrayList<Vector2> water;
     private ArrayList<Resource> resources;
-    private ArrayList<Man> men;
+    private ArrayList<AbstractCharacter> men;
+    private ArrayList<AbstractCharacter> ourMen;
     private com.zombie.model.Map map;
 
     static Map<Keys, Boolean> keys = new HashMap<Keys, Boolean>();
@@ -47,17 +47,15 @@ public class WorldController {
         keys.put(Keys.E, false);
     };
 
-    public WorldController(WorldView worldView) {
-        this.creatures = worldView.getWorld().getCreatures();
-        /*
-        TODO: delete
-         */
-        this.creature = creatures.get(0);
-        this.water = worldView.getWorld().getMap().getWater();//getBricks();
-        this.men = worldView.getWorld().getMen();
-        this.map = worldView.getWorld().getMap();
-        this.resources = worldView.getWorld().getResources();
-        this.worldView = worldView;
+    public WorldController(MyWorld myWorld) {
+        this.creatures = myWorld.getCreatures();
+        //this.creature = creatures.get(0);
+        this.water = myWorld.getMap().getWater();
+        this.men = myWorld.getMen();
+        this.ourMen = myWorld.getOurMen();
+        this.map = myWorld.getMap();
+        this.resources = myWorld.getMap().getResources();
+        //this.world = myWorld;
     }
 
     public void zoomIn() {
@@ -107,7 +105,23 @@ public class WorldController {
 
     public void update(float delta) {
         processInput();
-        creature.move(delta); /////////////////////////////
+        for (int i = 0; i < ourMen.size(); i++) {
+            if (ourMen.get(i).getCurrentHealth() > 0) {
+                try {
+                    ourMen.get(i).doMove();
+                }
+                catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            }
+        }
+        //TODO: update all entities except ours// get entity for all of them?.. bad(
+        //TODO: for (int i = 0; i < creatures.size... men.sizze... map.resources.size...
+//TODO: getEntity by id, get x and y and move them creatures.get(i).move(x,y);
+        /*for (int i = 0; i < creatures.size(); i++) {
+            if (creatures.get(i).getCurrentHealth() > 0)
+                creatures.get(i).doMove();
+        }*/
     }
 
     public void resetWay(){
@@ -117,16 +131,16 @@ public class WorldController {
         stopUp();
     }
 
-    private void checkPath() {
+    /*private void checkPath() {
 
         if (creature.getPosition().x <= 0)
             stopLeft();
         if (creature.getPosition().y <= 0)
             stopDown();
 
-        if (creature.getPosition().x >= worldView.CAMERA_WIDTH - creature.SIZE)
+        if (creature.getPosition().x >= CameraUtils.getCAMERA_WIDTH() - creature.SIZE)
             stopRight();
-        if (creature.getPosition().y >= worldView.CAMERA_HEIGHT - creature.SIZE)
+        if (creature.getPosition().y >= CameraUtils.getCAMERA_HEIGHT() - creature.SIZE)
             stopUp();
 
         for (int i = 0; i < water.size(); i++) {
@@ -148,7 +162,7 @@ public class WorldController {
         }
 
         ///////////////////////////////////////////////////////////////////////////////////
-        /*for (int i = 0; i < resources.size(); i++) {
+        for (int i = 0; i < resources.size(); i++) {
             if ((creature.getPosition().x >= resources.get(i).getPosition().x - creature.SIZE)
                     && (creature.getPosition().x <= resources.get(i).getPosition().x + creature.SIZE)
                     && (creature.getPosition().y >= resources.get(i).getPosition().y - creature.SIZE)
@@ -156,24 +170,23 @@ public class WorldController {
                     )  {
 
             }
-        }*/
+        }
 
         for (int i = 0; i < men.size(); i++)
         {
-            Man man = men.get(i);
-            if ((creature.getPosition().x >= man.getPosition().x - man.SIZE/2)
-                    && (creature.getPosition().x <= man.getPosition().x + man.SIZE/2)
-                    && (creature.getPosition().y >= man.getPosition().y - man.SIZE/2)
-                    && (creature.getPosition().y <= man.getPosition().y + man.SIZE/2)
+            AbstractCharacter man = men.get(i);
+            if ((creature.getPosition().x >= man.getX() - man.SIZE/2)
+                    && (creature.getPosition().x <= man.getX() + man.SIZE/2)
+                    && (creature.getPosition().y >= man.getY() - man.SIZE/2)
+                    && (creature.getPosition().y <= man.getY() + man.SIZE/2)
                     ) {
-                man.setDead(true);
             }
         }
-    }
+    }*/
 
     private void processInput() {
 
-        checkPath();
+        /*checkPath();
 
         if (keys.get(Keys.LEFT))
             creature.getVelocity().x = -Creature.SPEED;
@@ -192,13 +205,14 @@ public class WorldController {
             creature.getVelocity().x = 0;
         if ((keys.get(Keys.UP) && keys.get(Keys.DOWN)) || (!keys.get(Keys.UP) && (!keys.get(Keys.DOWN))))
             creature.getVelocity().y = 0;
+        */
 
         if (keys.get(Keys.Q)) {
-            worldView.zoomIn();
+            CameraUtils.zoomIn();
         }
 
         if (keys.get(Keys.E)) {
-            worldView.zoomOut();
+            CameraUtils.zoomOut();
         }
     }
 }

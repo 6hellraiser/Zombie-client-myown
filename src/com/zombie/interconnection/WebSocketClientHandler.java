@@ -45,12 +45,12 @@ import io.netty.util.CharsetUtil;
 
 public class WebSocketClientHandler extends SimpleChannelInboundHandler<Object> {
 
-    private final WebSocketClientHandshaker handshaker;
-    private ChannelPromise handshakeFuture;
+    private final WebSocketClientHandshaker handshaker;    private ChannelPromise handshakeFuture;
+
 
     public WebSocketClientHandler(WebSocketClientHandshaker handshaker) {
-        this.handshaker = handshaker;
-    }
+        this.handshaker = handshaker;    }
+
 
     public ChannelFuture handshakeFuture() {
         return handshakeFuture;
@@ -103,6 +103,7 @@ public class WebSocketClientHandler extends SimpleChannelInboundHandler<Object> 
             ch.close();
         }
     }
+    //ЧУПО-МОТИНГ
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {

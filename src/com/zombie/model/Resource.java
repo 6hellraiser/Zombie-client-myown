@@ -2,6 +2,7 @@ package com.zombie.model;
 
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.zombie.enums.ResourceType;
 
 /**
  * Created with IntelliJ IDEA.

@@ -19,6 +19,8 @@ public class MapView extends Actor {
 
     public MapView(Map m) {
         model = m;
+        CameraUtils.setWidthHeight(m.getWidth(), m.getHeight());
+        System.out.println(CameraUtils.getCAMERA_WIDTH() + " " + CameraUtils.getCAMERA_HEIGHT());
         textureGrass = TextureLibrary.getMapTexture()[0];
         textureWater = TextureLibrary.getMapTexture()[1];
     }

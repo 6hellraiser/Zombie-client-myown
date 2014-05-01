@@ -2,14 +2,8 @@ package com.zombie.screens;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.GL10;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.zombie.ZombieGame;
-import com.zombie.controller.WorldController;
-import com.zombie.model.MyWorld;
-import com.zombie.view.MainMenuStage;
-import com.zombie.view.MainMenuView;
-import com.zombie.view.WorldView;
 
 /**
  * Created with IntelliJ IDEA.

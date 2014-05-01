@@ -25,6 +25,7 @@ public class ZombieApplication {
         cfg.fullscreen = false;
         cfg.width = 800;
         cfg.height = 600;
+        //TODO: uncomment
         Client.init(new URI("ws://127.0.0.1:900/websocket"));
         application = new LwjglApplication(new ZombieGame(), cfg);
 

@@ -18,6 +18,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -54,7 +55,6 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandler.java" line="132" class="io.netty.handler.codec.http.websocketx.WebSocketClientProtocolHandler" package="io.netty.handler.codec.http.websocketx">
         <option name="ENABLED" value="true" />
@@ -86,6 +86,96 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java" line="56" class="com.zombie.model.MyWorld" package="com.zombie.model">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zombie/screens/LoginMenuView.java" line="73" class="com.zombie.screens.LoginMenuView$1$1" package="com.zombie.screens">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java" line="196" class="com.zombie.model.MyWorld" package="com.zombie.model">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java" line="228" class="com.zombie.model.MyWorld" package="com.zombie.model">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java" line="195" class="com.zombie.model.MyWorld" package="com.zombie.model">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java" line="141" class="com.zombie.model.MyWorld$1" package="com.zombie.model">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -96,75 +186,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/Client.java">
+      <file leaf-file-name="ZombieGame.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zombie/ZombieGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="25" selection-start="4684" selection-end="4684" vertical-scroll-proportion="0.0" vertical-offset="2023" max-vertical-offset="3009">
+            <state line="23" column="31" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Callback.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/util/Callback.java">
+      <file leaf-file-name="MainScreen.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/MainScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="1" selection-start="43" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiCallback.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/util/GuiCallback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginMenuView.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/view/LoginMenuView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="37" selection-start="3386" selection-end="3386" vertical-scroll-proportion="0.37261146" vertical-offset="941" max-vertical-offset="2057">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/GameScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="0" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="2720">
+            <state line="23" column="38" selection-start="643" selection-end="643" vertical-scroll-proportion="0.39011925" vertical-offset="111" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainMenuStage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/view/MainMenuStage.java">
+        <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/MainMenuStage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1751">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketClientHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/WebSocketClientHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="2091">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZombieApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zombie/ZombieApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="731">
+            <state line="87" column="0" selection-start="2611" selection-end="2611" vertical-scroll-proportion="0.0" vertical-offset="977" max-vertical-offset="1564">
               <folding />
             </state>
           </provider>
@@ -180,43 +223,33 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/zombie/view/ManView.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/model/BuildingType.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/view/BuildingView.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/model/Building.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/view/MapView.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/ZombieGame.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/model/ResourceType.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/model/Resource.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/view/TextureLibrary.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/view/ResourceView.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/view/WorldView.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/screens/GameScreen.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/model/Map.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/controller/WorldController.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/view/LoginData.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/com/zombie/model/MyWorld.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/ClientInitializer.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/ClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/Client.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/interconnection/ClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/interconnection/JsonDecoder.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/ZombieApplication.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/util/Callback.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/util/ZACallback.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/interconnection/Entity.java" />
         <option value="$PROJECT_DIR$/src/com/zombie/util/GuiCallback.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/interconnection/WebSocketClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/screens/LoginMenuView.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/screens/CharacterMenuView.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/screens/UserMenuView.java" />
         <option value="$PROJECT_DIR$/src/com/zombie/interconnection/Client.java" />
-        <option value="$PROJECT_DIR$/src/com/zombie/view/LoginMenuView.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/model/Creature.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/model/FirstZombie.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/plugin/AliveObject.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/plugin/Weapon.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/view/ResourceView.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/model/Resource.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/plugin/Resource.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/plugin/IWorld.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/interconnection/Building.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/model/MyWorld.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/interconnection/WebSocketClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/screens/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/zombie/screens/MainMenuStage.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1862" />
-    <option name="height" value="1096" />
+    <option name="width" value="1295" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -307,6 +340,160 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interconnection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zombie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -315,33 +502,39 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ZombieServer1/zombie-island" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zombie.plugin" />
       <recent name="com.zombie" />
+      <recent name="com.zombie.view" />
+      <recent name="com.zombie.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\123\IdeaProjects\Zombie_apr\zombie-client\src\com\zombie" />
+      <recent name="C:\Users\123\IdeaProjects\Zombie_apr\zombie-client\src\com\zombie\model" />
       <recent name="C:\Users\Public\Zombie-client\zombie-client\src\com\zombie\interconnection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -406,6 +599,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -431,19 +637,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -560,8 +753,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1862" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1295" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -569,29 +762,29 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.67972744" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33436853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27138644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2214358" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14412417" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22271386" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.095870204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14393939" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16075388" sideWeight="0.8432709" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33229813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20406568" sideWeight="0.7478705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2205438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.67972744" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13560607" sideWeight="0.6746167" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32815734" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24120083" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17572062" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
+    <option name="RECENTLY_FILTERED_USERS">
       <collection />
     </option>
   </component>
@@ -615,310 +808,248 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/LoginMenuView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/FirstZombie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="37" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="2091">
+        <state line="78" column="9" selection-start="2385" selection-end="2385" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="1598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="8" selection-start="9601" selection-end="9601" vertical-scroll-proportion="0.0" vertical-offset="3740" max-vertical-offset="6528">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3763#3771#0" expanded="true" />
+            <element signature="e#8045#8046#0" expanded="true" />
+            <element signature="e#10341#10354#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx.jar!/com/badlogic/gdx/scenes/scene2d/InputListener.class">
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/AliveObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="646" />
+        <state line="17" column="21" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="2703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/AliveObjectProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/AbstractCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/IWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="25" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/ResourceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/CreatureView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="8" selection-start="1060" selection-end="1131" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/LoginMenuView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="40" selection-start="4069" selection-end="4069" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
+        <state line="152" column="37" selection-start="5484" selection-end="5484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1992#2000#0" expanded="false" />
+            <element signature="e#2141#2167#0" expanded="false" />
+            <element signature="e#2345#2351#0" expanded="false" />
+            <element signature="e#2416#2422#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/ICharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/Building.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/AliveObjectProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/AbstractCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="27" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.84074074" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/CreatureView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="8" selection-start="1060" selection-end="1131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/ResourceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/AliveObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/FirstZombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="9" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/plugin/IWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/Building.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/controller/WorldController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="10" selection-start="2919" selection-end="2919" vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="3655">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/WebSocketClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="51" selection-start="3995" selection-end="3995" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="2006">
+        <state line="44" column="0" selection-start="2002" selection-end="2085" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="42" selection-start="4118" selection-end="4151" vertical-scroll-proportion="0.2857143" vertical-offset="1593" max-vertical-offset="7480">
+          <folding>
+            <element signature="e#3763#3771#0" expanded="true" />
+            <element signature="e#8045#8046#0" expanded="true" />
+            <element signature="e#10341#10354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/gdx-backend-lwjgl.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplicationConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="174" selection-end="174" vertical-scroll-proportion="0.16098484" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zombie/ZombieApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="47" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/LoginMenuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="32" selection-start="4240" selection-end="4240" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2091">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx.jar!/com/badlogic/gdx/scenes/scene2d/InputListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/MainScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="51" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1309" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/GameScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="47" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2720" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/ZombieApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/controller/WorldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="23" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="3179" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/WorldView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="2006" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/MainScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="51" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx.jar!/com/badlogic/gdx/Screen.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="198" selection-end="198" vertical-scroll-proportion="-4.76" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="29" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Zombie.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/MyWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1190" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/MainMenuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/LoginData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/nio/channels/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="17" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.33280757" vertical-offset="316" max-vertical-offset="1122" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/model/Brick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="255" selection-end="255" vertical-scroll-proportion="0.26645768" vertical-offset="0" max-vertical-offset="638" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx-backend-lwjgl.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="11" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.595" vertical-offset="51" max-vertical-offset="1615" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/util/concurrent/Callable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="12" selection-start="1267" selection-end="1293" vertical-scroll-proportion="0.7868339" vertical-offset="8" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="10" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.46708465" vertical-offset="246" max-vertical-offset="884" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/controller/WorldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="4" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="3468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/RegMenuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="18" selection-start="5447" selection-end="5447" vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="1921" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Connect/Connect.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="963" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="20" selection-start="1606" selection-end="1610" vertical-scroll-proportion="1.1827621" vertical-offset="0" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/bootstrap/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="24" selection-start="3059" selection-end="3072" vertical-scroll-proportion="0.33221477" vertical-offset="924" max-vertical-offset="3485" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/channel/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="17" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.33221477" vertical-offset="601" max-vertical-offset="8449" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketClientHandshakerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="38" selection-start="3534" selection-end="3534" vertical-scroll-proportion="0.9815436" vertical-offset="486" max-vertical-offset="1428" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/handler/codec/MessageToMessageDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="28" selection-start="4413" selection-end="4413" vertical-scroll-proportion="1.2690438" vertical-offset="815" max-vertical-offset="1734" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketProtocolHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="65" selection-start="877" selection-end="877" vertical-scroll-proportion="0.16531605" vertical-offset="0" max-vertical-offset="617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketClientProtocolHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="65" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.020304568" vertical-offset="311" max-vertical-offset="2295">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="11" selection-start="5310" selection-end="5313" vertical-scroll-proportion="1.7601297" vertical-offset="529" max-vertical-offset="1989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx.jar!/com/badlogic/gdx/scenes/scene2d/InputListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="489" column="13" selection-start="17876" selection-end="17876" vertical-scroll-proportion="0.33287102" vertical-offset="7682" max-vertical-offset="19907" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx.jar!/com/badlogic/gdx/scenes/scene2d/ui/TextField.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="28" selection-start="4762" selection-end="4762" vertical-scroll-proportion="-8.04" vertical-offset="1601" max-vertical-offset="3383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/MainMenuStage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.0.17.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="4079" selection-end="4079" vertical-scroll-proportion="0.0" vertical-offset="1376" max-vertical-offset="2006">
-          <folding>
-            <element signature="e#0#4781#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#3843#3873#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx-backend-lwjgl.jar!/org/lwjgl/opengl/GLContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.8674699" vertical-offset="465" max-vertical-offset="1071" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/gdx.jar!/com/badlogic/gdx/Application.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="163" selection-end="163" vertical-scroll-proportion="0.14309764" vertical-offset="0" max-vertical-offset="1258">
+        <state line="29" column="51" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="0" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.0" vertical-offset="1522" max-vertical-offset="2652">
+        <state line="51" column="0" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="3162">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zombie/ZombieGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="291" selection-end="291" vertical-scroll-proportion="0.29402262" vertical-offset="5" max-vertical-offset="646">
+        <state line="23" column="31" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/util/Callback.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/MainMenuStage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="43" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+        <state line="87" column="0" selection-start="2611" selection-end="2611" vertical-scroll-proportion="0.0" vertical-offset="977" max-vertical-offset="1564">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/WebSocketClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zombie/screens/MainScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="2091">
+        <state line="23" column="38" selection-start="643" selection-end="643" vertical-scroll-proportion="0.39011925" vertical-offset="111" max-vertical-offset="1156">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/interconnection/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="25" selection-start="4684" selection-end="4684" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="2193">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/ZombieApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/util/GuiCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zombie/view/LoginMenuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="37" selection-start="3386" selection-end="3386" vertical-scroll-proportion="0.37261146" vertical-offset="941" max-vertical-offset="2057">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,7 +1093,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -16,6 +16,7 @@ import com.zombie.model.*;
  * To change this template use File | Settings | File Templates.
  */
 public class CreatureView extends Actor {
+    private final float size = 1f;
 
     private Creature model;
 
@@ -33,18 +34,18 @@ public class CreatureView extends Actor {
     public void draw(SpriteBatch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
 
-        Rectangle rect = model.getBounds();
-        float x1 = model.getPosition().x + rect.x;
-        float y1 = model.getPosition().y + rect.y;
-        if (model.isDead())
+        //Rectangle rect = model.getBounds();
+        float x1 = model.getX() + size;
+        float y1 = model.getY() + size;
+        if (model.getCurrentHealth() <= 0)
             currentTexture = textureDead;
         else {
-            if (model.getVelocity().x < 0)
+            if (model.getxSpeed() < 0)
                 currentTexture = textureLeft;
-            if (model.getVelocity().x > 0)
+            if (model.getxSpeed() > 0)
                 currentTexture = textureRight;
         }
-        batch.draw(currentTexture, x1, y1, rect.width, rect.height);
+        batch.draw(currentTexture, x1, y1, size, size);
     }
 
 }

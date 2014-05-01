@@ -2,9 +2,8 @@ package com.zombie.view;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.zombie.model.Resource;
+import com.zombie.plugin.Resource;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,6 +14,7 @@ import com.zombie.model.Resource;
  */
 public class ResourceView extends Actor {
     Resource model;
+    private final float size = 1f;
 
     public ResourceView(Resource res) {
         model = res;
@@ -27,10 +27,9 @@ public class ResourceView extends Actor {
     public void draw(SpriteBatch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
 
-        Rectangle rect = model.getBounds();
-        float x1 = model.getPosition().x + rect.x;
-        float y1 = model.getPosition().y + rect.y;
+        float x1 = model.getX() + size;
+        float y1 = model.getY() + size;
 
-        batch.draw(texture, x1, y1, rect.width, rect.height);
+        batch.draw(texture, x1, y1, size, size);
     }
 }

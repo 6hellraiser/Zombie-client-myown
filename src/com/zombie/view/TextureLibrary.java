@@ -2,12 +2,9 @@ package com.zombie.view;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
-import com.zombie.model.BuildingType;
-import com.zombie.model.ResourceType;
-import com.zombie.model.Team;
-
-import java.util.Dictionary;
-import java.util.Enumeration;
+import com.zombie.enums.BuildingType;
+import com.zombie.plugin.ResourceType;
+import com.zombie.plugin.Team;
 
 /**
  * Created with IntelliJ IDEA.
@@ -92,15 +89,16 @@ public class TextureLibrary {
             texture = new Texture(Gdx.files.internal("assets/pictures/resources/water.png"));
             return texture;
         }
-        if (type.equals(ResourceType.Gun)) {
-            texture = new Texture(Gdx.files.internal("assets/pictures/resources/gun.png"));
+        if (type.equals(ResourceType.Medicines)) {
+            texture = new Texture(Gdx.files.internal("assets/pictures/resources/med.png"));
             return texture;
         }
-        if (type.equals(ResourceType.Ammunition)) {
-            texture = new Texture(Gdx.files.internal("assets/pictures/resources/ammunition.png"));
-            return texture;
-        }
-        texture = new Texture(Gdx.files.internal("assets/pictures/resources/med.png"));
+/*if (type.equals(ResourceType.Ammunition)) {
+texture = new Texture(Gdx.files.internal("assets/pictures/resources/ammunition.png"));
+return texture;
+}
+texture = new Texture(Gdx.files.internal("assets/pictures/resources/med.png"));*/
+        texture = new Texture(Gdx.files.internal("assets/pictures/map/water.png"));
         return texture;
     }
 }

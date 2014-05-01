@@ -5,7 +5,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.zombie.model.Man;
+//import com.zombie.model.Man;
+import com.zombie.plugin.AbstractCharacter;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,9 +16,10 @@ import com.zombie.model.Man;
  * To change this template use File | Settings | File Templates.
  */
 public class ManView extends Actor {
-    private Man model;
+    private AbstractCharacter model;
+    private final float size = 1f;
 
-    public ManView(Man model) {
+    public ManView(AbstractCharacter model) {
         this.model = model;
         textureLeft = TextureLibrary.getTextures(model.getTeam())[0];
         textureRight = TextureLibrary.getTextures(model.getTeam())[1];
@@ -34,17 +36,17 @@ public class ManView extends Actor {
     public void draw(SpriteBatch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
 
-        Rectangle rect = model.getBounds();
-        float x1 = model.getPosition().x + rect.x;
-        float y1 = model.getPosition().y + rect.y;
-        if (model.isDead())
+        float x1 = model.getX() + size;
+        float y1 = model.getY() + size;
+        if (model.getCurrentHealth() <= 0)
             currentTexture = textureDead;
         else {
-            if (model.getVelocity().x < 0)
+            if (model.getxSpeed() < 0)
                 currentTexture = textureLeft;
-            if (model.getVelocity().x > 0)
+            if (model.getxSpeed() > 0)
                 currentTexture = textureRight;
         }
-        batch.draw(currentTexture, x1, y1, rect.width, rect.height);
+
+        batch.draw(currentTexture, x1, y1, size, size);
     }
 }

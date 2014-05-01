@@ -2,7 +2,11 @@ package com.zombie.screens;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.GL10;
+import com.zombie.PluginFactory;
 import com.zombie.model.*;
+import com.zombie.plugin.AbstractCharacter;
+import com.zombie.plugin.Team;
+import com.zombie.plugin.Weapon;
 import com.zombie.view.*;
 import com.zombie.controller.*;
 
@@ -16,21 +20,51 @@ import com.zombie.controller.*;
 public class GameScreen implements Screen, InputProcessor {
 
     private MyWorld world;
-    private WorldController	controller;
+    private WorldController controller;
     private WorldView worldView;
 
     private int width, height;
 
     @Override
     public void show() {
-
-        world = new MyWorld();
-        worldView = new WorldView(world);
-        controller = new WorldController(worldView);
+        //TODO: not new?..
+        setGame();
         Gdx.input.setInputProcessor(this);
+
         /*Music music = Gdx.audio.newMusic(Gdx.files.internal("assets/sounds/music/01.mp3"));
         music.setLooping(true);
         music.play();*/
+    }
+
+    private void setGame() {
+        if (world == null) {
+            System.out.println("CHUPO-MOTING-CHUPS");
+            //TODO: tododoododoodoooooooo PARSE THE UNIVERSE
+            //
+            world = new MyWorld();
+            worldView = new WorldView(world);
+            controller = new WorldController(world);
+        }
+    }
+
+    public void setCharacter(AbstractCharacter character) {
+        setGame();
+
+        for (int i = 0; i < world.getMap().getTeams().size(); i++) {
+            if (world.getMap().getTeams().get(i).getTeam().equals(character.getTeam())) {
+                character.setX(world.getMap().getTeams().get(i).getPosition().x);
+                character.setY(world.getMap().getTeams().get(i).getPosition().y);
+                //TODO послать серверу команду с твоими координатами
+                character.setWorld(world);
+                Weapon weapon = new Weapon();
+                weapon.setDamage(10);
+                weapon.setDistance(1);
+                character.setWeapon(weapon);
+                world.getMen().add(character);
+                worldView.addActor(new ManView(character));
+                return;
+            }
+        }
     }
 
     @Override
@@ -137,7 +171,7 @@ public class GameScreen implements Screen, InputProcessor {
     public boolean touchDown(int x, int y, int pointer, int button) {
 
         if (button == Input.Buttons.RIGHT) {
-            worldView.setCamera(x, this.height - y);
+            CameraUtils.setCamera(x, this.height - y);
         }
         return false;
     }

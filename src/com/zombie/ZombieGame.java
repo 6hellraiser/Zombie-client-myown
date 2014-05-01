@@ -1,6 +1,8 @@
 package com.zombie;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Screen;
+import com.zombie.plugin.AbstractCharacter;
 import com.zombie.screens.GameScreen;
 import com.zombie.screens.MainScreen;
 
@@ -21,6 +23,11 @@ public class ZombieGame extends Game {
         gameScreen = new GameScreen();
         mainScreen = new MainScreen(this);
         setScreen(mainScreen);
+    }
+
+    public void setGameScreen(AbstractCharacter character) {
+        gameScreen.setCharacter(character);
+        super.setScreen(gameScreen);
     }
 
     @Override

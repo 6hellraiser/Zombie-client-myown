@@ -1,8 +1,5 @@
 package com.zombie.model;
 
-import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector2;
-
 /**
  * Created with IntelliJ IDEA.
  * User: 123
@@ -10,7 +7,8 @@ import com.badlogic.gdx.math.Vector2;
  * Time: 13:35
  * To change this template use File | Settings | File Templates.
  */
-public class Man {
+/*public class Man extends com.zombie.plugin.AbstractCharacter {
+    //ICharacter strategy;
     public static final float SIZE = 1f;
     public static final float SPEED = 3f;
     Vector2 position = new Vector2();
@@ -32,11 +30,13 @@ public class Man {
         return team;
     }
 
-    public Man(Vector2 pos, Team t) {
+    public Man(Vector2 pos, Team t, IWorld w) {
+        super(w);
         this.position = pos;
         this.bounds.width = SIZE;
         this.bounds.height = SIZE;
         team = t;
+        //strategy = s;
     }
 
     public Rectangle getBounds() {
@@ -51,7 +51,11 @@ public class Man {
         return velocity;
     }
 
+    public void action() {
+        //strategy.DoMove();
+        this.doMove();
+    }
     /*public void move(float delta) {
         position.add(velocity.mul(delta));
     }*/
-}
+/*}  */
